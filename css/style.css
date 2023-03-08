@@ -5,14 +5,14 @@
 
 @font-face {
   font-family: "OpenSans";
-  src: url("fonts/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("fonts/OpenSans-Regular.woff") format("woff");
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -35,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 127px;
-  background: url("img/banner-bg.jpg") no-repeat;
+  background: url("../img/banner-bg.jpg") no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -219,7 +219,7 @@ h2.popup-title {
   font-weight: 400;
   font-family: "OpenSans";
 
-  background-image: url("svg/form-arrows.svg");
+  background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: center right 13px;
@@ -249,11 +249,11 @@ h2.popup-title {
   width: 17px;
   height: 17px;
   display: inline-block;
-  background: url("svg/form-empty-circle.svg") no-repeat left bottom / 17px;
+  background: url("../svg/form-empty-circle.svg") no-repeat left bottom / 17px;
 }
 
 .popup-radio-opt:checked + .popup-radio-text::before {
-  background-image: url("svg/form-circle.svg");
+  background-image: url("../svg/form-circle.svg");
 }
 
 .pop-submit-button {
@@ -286,7 +286,7 @@ h2.popup-title {
   height: 18px;
   border: none;
   margin-bottom: 8px;
-  background-image: url("svg/form-x.svg");
+  background-image: url("../svg/form-x.svg");
   background-repeat: no-repeat;
   background-size: 18px;
   background-color: transparent;
@@ -375,19 +375,19 @@ h2.popup-title {
 }
 
 .trend-1 {
-  background-image: url("img/trend1.jpg");
+  background-image: url("../img/trend1.jpg");
 }
 
 .trend-2 {
-  background-image: url("img/trend2.jpg");
+  background-image: url("../img/trend2.jpg");
 }
 
 .trend-3 {
-  background-image: url("img/trend3.jpg");
+  background-image: url("../img/trend3.jpg");
 }
 
 .trend-4 {
-  background-image: url("img/trend4.jpg");
+  background-image: url("../img/trend4.jpg");
 }
 
 .main {
@@ -535,7 +535,7 @@ h2.popup-title {
   display: block;
   width: 48px;
   height: 48px;
-  background: url("svg/search.svg") no-repeat center center;
+  background: url("../svg/search.svg") no-repeat center center;
   background-size: 18px 18px;
   border: none;
   cursor: pointer;
@@ -743,15 +743,15 @@ h2.popup-title {
 }
 
 .dribbble {
-  background: url("svg/001-dribbble.svg") no-repeat center center / 20px;
+  background: url("../svg/001-dribbble.svg") no-repeat center center / 20px;
 }
 
 .pinterest {
-  background: url("svg/001-pinterest.svg") no-repeat center center / 20px;
+  background: url("../svg/001-pinterest.svg") no-repeat center center / 20px;
 }
 
 .twitter {
-  background: url("svg/003-tumblr.svg") no-repeat center center / 20px;
+  background: url("../svg/003-tumblr.svg") no-repeat center center / 20px;
 }
 
 .copyright {
@@ -769,7 +769,7 @@ h2.popup-title {
   /*    HEADER    */
 
   .header {
-    background: url("img/banner-bg-tablet.jpg") no-repeat;
+    background: url("../img/banner-bg-tablet.jpg") no-repeat;
     background-size: cover;
     margin-bottom: 43px;
     padding: 13px 0 115px 0;
@@ -811,7 +811,7 @@ h2.popup-title {
     width: 23px;
     height: 23px;
     display: inline-block;
-    background: url("svg/form-empty-circle.svg") no-repeat left bottom / 23px;
+    background: url("../svg/form-empty-circle.svg") no-repeat left bottom / 23px;
   }
 
   /*   MAIN   */
@@ -914,7 +914,7 @@ h2.popup-title {
 @media (max-width: 640px) {
   /*    HEADER    */
   .header {
-    background: url("img/banner-mobile.jpg") no-repeat;
+    background: url("../img/banner-mobile.jpg") no-repeat;
     background-size: cover;
     margin-bottom: 38px;
     padding: 0 1% 212px 1%;
@@ -964,7 +964,7 @@ h2.popup-title {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background: url("svg/form-empty-circle.svg") no-repeat left bottom / 24px;
+    background: url("../svg/form-empty-circle.svg") no-repeat left bottom / 24px;
   }
 
   .close {
