@@ -61,6 +61,7 @@
   line-height: 1.65;
   font-weight: 700;
   font-family: "OpenSans";
+  text-transform: uppercase;
 }
 
 .header::before {
@@ -92,6 +93,11 @@
   font-weight: 400;
   font-family: "OpenSans";
   text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-items > li:first-child .menu-item {
+  margin-left: 0px;
 }
 
 .menu-item:hover {
@@ -298,8 +304,17 @@ h2.popup-title {
   max-width: 1170px;
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto auto;
+  margin-bottom: 60px;
+}
+
+.main {
+  max-width: 777px;
+}
+
+.aside {
+  width: 270px;
+  box-sizing: border-box;
 }
 
 .titles,
@@ -307,6 +322,7 @@ h2.popup-title {
   box-sizing: border-box;
   text-align: center;
   font-size: 14px;
+  text-transform: uppercase;
 
   text-decoration: none;
   color: #0f0d0e;
@@ -329,10 +345,13 @@ h2.popup-title {
 }
 
 .trends {
+  margin-bottom: 60px;
+}
+
+.trends-card-list {
   display: flex;
   gap: 4px;
   margin-top: 25px;
-  margin-bottom: 60px;
 }
 
 .trends-card {
@@ -372,6 +391,7 @@ h2.popup-title {
   font-weight: 700;
   font-family: "OpenSans";
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .trend-1 {
@@ -390,9 +410,7 @@ h2.popup-title {
   background-image: url("../img/trend4.jpg");
 }
 
-.main {
-  max-width: 777px;
-}
+
 
 .card {
   display: flex;
@@ -411,12 +429,13 @@ h2.popup-title {
   font-family: "OpenSans";
   line-height: 1.2;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .date-block {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
 
 .date {
@@ -433,6 +452,7 @@ h2.popup-title {
 }
 
 .card-tags {
+  display: block;
   list-style-type: none;
   display: flex;
   margin-bottom: 5px;
@@ -448,8 +468,13 @@ h2.popup-title {
   color: #b59f5b;
   font-weight: 700;
   font-family: "OpenSans";
-  padding-right: 20px;
+  margin-right: 20px;
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+.card-tags > li:last-child .card-tag {
+  margin-right: 0px;
 }
 
 .card-desc {
@@ -467,7 +492,7 @@ h2.popup-title {
   color: #000000;
   font-weight: 700;
   font-family: "OpenSans";
-  padding-left: 12px;
+  margin-left: 12px;
 }
 
 .card-img {
@@ -477,10 +502,6 @@ h2.popup-title {
 
 /*   ASIDE    */
 
-.aside {
-  width: 270px;
-  box-sizing: border-box;
-}
 
 .aside-img {
   height: 70px;
@@ -488,7 +509,11 @@ h2.popup-title {
 
 .aside-card {
   display: flex;
-  padding-bottom: 22px;
+  margin-bottom: 22px;
+}
+
+.aside-card:last-child {
+  margin-bottom: 0px;
 }
 
 .aside-card-desc {
@@ -496,7 +521,7 @@ h2.popup-title {
 }
 
 .new-posts {
-  padding-top: 24px;
+  margin-top: 24px;
 }
 
 .new-post-title {
@@ -505,11 +530,11 @@ h2.popup-title {
   font-size: 14px;
   font-weight: 700;
   font-family: "OpenSans";
+  text-transform: uppercase;
 }
 
 .search {
   margin-top: 33px;
-  margin-bottom: 55px;
 }
 
 .search-section {
@@ -546,6 +571,10 @@ h2.popup-title {
   background-color: #323232;
 }
 
+.email {
+  margin-top: 55px;
+}
+
 .email-area {
   width: 100%;
   height: 50px;
@@ -563,7 +592,6 @@ h2.popup-title {
   height: 48px;
   background-color: #b59f5b;
   margin-top: 15px;
-  margin-bottom: 55px;
   color: rgb(255, 255, 255);
   cursor: pointer;
   font-weight: 700;
@@ -573,13 +601,16 @@ h2.popup-title {
   background-color: #323232;
 }
 
+.tags {
+  margin-top: 57px;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin-bottom: 58px;
-  margin-top: 28px;
   list-style: none;
+  margin-top: 28px;
 }
 
 .tag {
@@ -591,10 +622,15 @@ h2.popup-title {
   font-weight: 700;
   font-family: "OpenSans";
   border: 3px solid #eeeeee;
+  text-transform: uppercase;
 }
 
 .tag:hover {
   border: 3px solid #b59f5b;
+}
+
+.themes {
+  margin-top: 58px;
 }
 
 .theme-list {
@@ -632,12 +668,11 @@ h2.popup-title {
   font-family: "OpenSans";
 }
 
-/*   МАГАЗИН   */
+/*   SHOP   */
 
 .shop {
   display: block;
-  margin-top: 65px;
-  /* width: 100%; */
+  margin-bottom: 60px;
 }
 
 .shop-card-list {
@@ -645,7 +680,7 @@ h2.popup-title {
   flex-wrap: wrap;
   justify-content: center;
   gap: 65px;
-  margin-top: 23px;
+
 }
 
 .shop-card {
@@ -666,9 +701,11 @@ h2.popup-title {
   font-size: 20px;
   font-weight: 700;
   font-family: "OpenSans";
+  text-transform: uppercase;
 }
 
 .shop-card-desc {
+  display: block;
   font-size: 15px;
   font-family: "OpenSans";
   line-height: 22px;
@@ -716,7 +753,9 @@ h2.popup-title {
   background-color: #323232;
 }
 
-/*  ПОДВАЛ    */
+
+
+/*  FOOTER    */
 .footer {
   width: 70%;
   padding: 30px 0 30px 0;
@@ -726,7 +765,6 @@ h2.popup-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 65px;
   margin-bottom: 72px;
 }
 
@@ -771,7 +809,7 @@ h2.popup-title {
   .header {
     background: url("../img/banner-bg-tablet.jpg") no-repeat;
     background-size: cover;
-    margin-bottom: 43px;
+    margin-bottom: 50px;
     padding: 13px 0 115px 0;
   }
 
@@ -783,7 +821,7 @@ h2.popup-title {
   }
 
   .header-block {
-    width: 91%;
+    width: calc(100% - 70px);
   }
 
   .header-logo {
@@ -815,8 +853,21 @@ h2.popup-title {
   }
 
   /*   MAIN   */
+  .block {
+    max-width: 100%;
+    display: flex;
+    padding: 0 35px 0 35px;
+    margin-bottom: 50px;
+  }
+  
   .main {
-    width: 392px;
+    width: calc(100% - 305px);
+  }
+  
+  .aside {
+    width: 270px;
+    box-sizing: border-box;
+    margin-left: 35px;
   }
 
   .main-title {
@@ -827,15 +878,16 @@ h2.popup-title {
     font-size: 17px;
   }
 
-  .block {
-    justify-content: space-evenly;
+  .trends {
+    margin-bottom: 50px;
   }
 
-  .trends {
+  .trends-card-list {
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 18px 0 50px 0;
+    margin-top: 18px;
   }
+
 
   .trends-card {
     width: calc(50% - 4px);
@@ -851,6 +903,7 @@ h2.popup-title {
 
   .trends-caption {
     font-size: 17px;
+
   }
 
   .card {
@@ -871,8 +924,7 @@ h2.popup-title {
   }
 
   .date-block {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    margin: 28px 0 28px 0;
   }
 
   /*    ASIDE    */
@@ -880,24 +932,37 @@ h2.popup-title {
     margin-top: 23px;
   }
 
+  /*    SHOP    */
   .shop {
-    margin-top: 35px;
-    width: 100%;
-  }
-
-  .shop-card-block {
-    max-width: 700px;
-    margin: auto auto;
-  }
-
-  .shop-card-text {
-    max-width: 294px;
+    padding: 0 35px 0 35px; 
+    margin-bottom: 50px;
   }
 
   .shop-card-list {
-    justify-content: flex-start;
-    gap: 25px;
-    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 22px;
+  }
+
+  .shop-card {
+    width: calc(50% - 11px);
+  }
+
+  .shop-card-text {
+    max-width: 100%;
+  }
+
+  .shop-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .shop-img {
+    display: block;
+    width: calc(100% - 44px);
+    margin: 0 22px 0 22px;
+    height: auto;
   }
 
   .shop-card-title {
@@ -906,8 +971,8 @@ h2.popup-title {
 
   /*    FOOTER    */
   .footer {
-    width: 90%;
-    margin: 53px auto 50px auto;
+    width: calc(100% - 70px);
+    margin: 0 auto 50px auto;
   }
 }
 
@@ -916,14 +981,14 @@ h2.popup-title {
   .header {
     background: url("../img/banner-mobile.jpg") no-repeat;
     background-size: cover;
-    margin-bottom: 38px;
+    margin-bottom: 43px;
     padding: 0 1% 212px 1%;
   }
 
   .header-block {
     display: flex;
     flex-direction: column-reverse;
-    width: calc(100% - 24px);
+    width: calc(100% - 30px);
     margin-top: 31px;
   }
 
@@ -991,8 +1056,11 @@ h2.popup-title {
   .main-title {
     font-size: 16px;
   }
-
   .trends {
+    margin-bottom: 42px;
+  }
+
+  .trends-card-list {
     flex-direction: column;
     align-items: center;
     gap: 3px;
@@ -1012,14 +1080,16 @@ h2.popup-title {
 
   .trends-desc {
     padding: 30px 35px 30px 20px;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .block {
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 43px;
   }
 
   .card {
@@ -1047,7 +1117,7 @@ h2.popup-title {
   }
 
   .date-block {
-    padding: 18px 0 9px 0;
+    margin: 18px 0 9px 0;
   }
 
   .menu {
@@ -1075,13 +1145,12 @@ h2.popup-title {
     gap: 3px;
   }
 
+  /*     SHOP     */
   .shop {
-    margin-top: 30px;
+    margin-bottom: 40px;
   }
 
   .shop-card-list {
-    margin-top: 30px;
-    padding: 0 15px 0 15px;
     gap: 28px;
   }
 
@@ -1092,13 +1161,29 @@ h2.popup-title {
   .shop-card {
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .shop-card-text {
+    max-width: 100%;
+  }
+
+  .shop-pic {
+    display: block; 
+    width: 100%;
+  }
+
+  .shop-img {
+    display: block;
+    width: calc(100% - 44px);
+    margin: 0 22px 0 22px;
+    height: auto;
   }
 
   /*    FOOTER    */
 
   .footer {
     width: 90%;
-    margin-top: 40px;
     margin-bottom: 50px;
   }
 }
