@@ -50,6 +50,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
+  padding: 0 15px 0 15px;
 }
 
 .header-text {
@@ -306,6 +307,7 @@ h2.popup-title {
   justify-content: space-between;
   margin: auto auto;
   margin-bottom: 60px;
+  padding: 0 15px 0 15px;
 }
 
 .main {
@@ -330,6 +332,10 @@ h2.popup-title {
   font-family: "OpenSans";
 }
 
+.aside-titles {
+  margin-bottom: 24px;
+}
+
 .titles::after {
   content: "";
   display: block;
@@ -342,6 +348,7 @@ h2.popup-title {
 
 .main-title {
   font-size: 20px;
+  margin-bottom: 28px;
 }
 
 .trends {
@@ -351,7 +358,6 @@ h2.popup-title {
 .trends-card-list {
   display: flex;
   gap: 4px;
-  margin-top: 25px;
 }
 
 .trends-card {
@@ -365,6 +371,7 @@ h2.popup-title {
   z-index: 1;
   align-items: end;
   justify-content: center;
+
 }
 
 .trends-card::before {
@@ -392,6 +399,8 @@ h2.popup-title {
   font-family: "OpenSans";
   line-height: 24px;
   text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .trend-1 {
@@ -520,9 +529,7 @@ h2.popup-title {
   margin-left: 20px;
 }
 
-.new-posts {
-  margin-top: 24px;
-}
+
 
 .new-post-title {
   text-decoration: none;
@@ -671,7 +678,10 @@ h2.popup-title {
 /*   SHOP   */
 
 .shop {
-  display: block;
+  display: block; 
+  padding: 0 15px 0 15px;
+  max-width: 1170px;
+  margin: auto auto;
   margin-bottom: 60px;
 }
 
@@ -679,8 +689,8 @@ h2.popup-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 65px;
-
+  gap: 60px;
+  width: 100%;
 }
 
 .shop-card {
@@ -757,8 +767,10 @@ h2.popup-title {
 
 /*  FOOTER    */
 .footer {
-  width: 70%;
+  width: 100%;
+  max-width: 1170px;
   padding: 30px 0 30px 0;
+  /* padding: 30px; */
   background-color: #f4f7f6;
   margin-left: auto;
   margin-right: auto;
@@ -793,7 +805,9 @@ h2.popup-title {
 }
 
 .copyright {
+  display: block;
   text-align: center;
+  padding-bottom: 47px;
 }
 
 .copyright-desk {
@@ -801,6 +815,8 @@ h2.popup-title {
   color: #999999;
   font-weight: 700;
   font-family: "OpenSans";
+  cursor: pointer;
+  text-decoration: none;
 }
 
 @media ((min-width: 641px) and (max-width: 1199px)) {
@@ -867,11 +883,11 @@ h2.popup-title {
   .aside {
     width: 270px;
     box-sizing: border-box;
-    margin-left: 35px;
   }
 
   .main-title {
     font-size: 18px;
+    
   }
 
   .card-title {
@@ -885,7 +901,6 @@ h2.popup-title {
   .trends-card-list {
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 18px;
   }
 
 
@@ -936,6 +951,7 @@ h2.popup-title {
   .shop {
     padding: 0 35px 0 35px; 
     margin-bottom: 50px;
+    
   }
 
   .shop-card-list {
@@ -1189,7 +1205,26 @@ h2.popup-title {
 }
 
 @media ((max-width: 640px) and (orientation: landscape)) {
+  .trends-card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
   .trends-card {
     width: calc(50% - 4px);
+  }
+
+  .trends-desc {
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+@media ((min-width: 641px) and (max-width: 1199px) and (orientation: landscape)) {
+  .trends-card {
+    width: calc(25% - 4px);
+  }
+
+  .trends-desc {
+    padding: 10px 20px 10px 20px;
   }
 }
