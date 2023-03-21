@@ -36,7 +36,7 @@
 
   </header>
 
-  <section class="popup visually-hidden">
+  <section class="popup">
 
     <div class="close">
       <button class="popup-close">
@@ -45,29 +45,29 @@
     </div>
     <div class="popup-block">
       <h2 class="main-title titles popup-title">ваш фидбек</h2>
-      <p class="popup-que">Как часто вы заходите на сайт?</p>
+      <span class="popup-que">Как часто вы заходите на сайт?</span>
       <select class="popup-select">
         <option value="Почти каждый день" class="select-opt"  selected>Почти каждый день</option>
         <option value="Раз в несколько дней" class="select-opt">Раз в несколько дней</option>
         <option value="Раз в несколько недель" class="select-opt">Раз в несколько недель</option>
         <option value="Несколько раз в год" class="select-opt">Несколько раз в год</option>
       </select>
-      <p class="popup-que">Вы подписаны на e-mail рассылку?</p>
+      <span class="popup-que">Вы подписаны на e-mail рассылку?</span>
       <div class="popup-radio">
-        <label for="popup-radio1">
+        <label for="popup-radio1" class="popup-label">
           <input type="radio" id="popup-radio1" name="pop-radio" class="popup-radio-opt" value="Да" checked>
-          <span class="popup-radio-text"> Да</span>
+          <span class="popup-radio-text">Да</span>
         </label>
-        <label for="popup-radio2">
+        <label for="popup-radio2" class="popup-label">
           <input type="radio" id="popup-radio2" name="pop-radio" class="popup-radio-opt" value="Нет">
-          <span class="popup-radio-text"> Нет</span>
+          <span class="popup-radio-text">Нет</span>
         </label>
       </div>
 
-      <p class="popup-que">Расскажите, какой контент вы хотели бы видеть  на нашем сайте?</p>
+      <span class="popup-que">Расскажите, какой контент вы хотели бы видеть  на нашем сайте?</span>
       <textarea class="popup-area" placeholder="Может, больше рецептов?"></textarea>
       <button class="pop-submit-button">
-        отправить
+        ОТПРАВИТЬ
         <span class="visually-hidden">Кнопка отправки формы</span>
       </button>
 
@@ -396,11 +396,12 @@
   </section>
 
   <footer class="footer">
-    <ul class="footer-list">
-      <li><a href="#" class="footer-item dribbble"><span class="visually-hidden">Профиль компании в dribbble</span></a></li>
-      <li><a href="#" class="footer-item pinterest"><span class="visually-hidden">Профиль компании в pinterest</span></a></li>
-      <li><a href="#" class="footer-item twitter"><span class="visually-hidden">Профиль компании в twitter</span></a></li>
-    </ul>
+    <address class="social-media">
+      <ul class="media-list">
+        <li><a href="#" class="media-item dribbble"><span class="visually-hidden">Профиль компании в dribbble</span></a></li>
+        <li><a href="#" class="media-item pinterest"><span class="visually-hidden">Профиль компании в pinterest</span></a></li>
+        <li><a href="#" class="media-item twitter"><span class="visually-hidden">Профиль компании в twitter</span></a></li>
+    </address>
   </footer>
   <div class="copyright"><a href="#" class="copyright-desk">Copyright © 2009–2019 City Blog LLC.</a></div>
 </body>

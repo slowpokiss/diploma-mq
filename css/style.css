@@ -157,7 +157,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-
 }
 
 .popup-block {
@@ -169,7 +168,7 @@
 }
 
 h2.popup-title {
-  margin: 17px 0 22px;
+  margin: 17px 0 22px 0;  
 }
 
 .popup-que {
@@ -235,9 +234,11 @@ h2.popup-title {
 
 .popup-select:focus {
   border-bottom: 1px solid #b59f5b;
+  margin-bottom: 29px;
 }
 
 .popup-radio {
+  box-sizing: border-box;
   margin: 10px 0 25px 0;
 }
 
@@ -247,9 +248,16 @@ h2.popup-title {
 
 .popup-radio-text {
   font-size: 13px;
-  padding-right: 25px;
+  margin-right: 25px;
   font-family: "OpenSans";
 }
+
+/*   .card-tags > li:last-child .card-tag   */
+
+.popup-label:last-child .popup-radio-text {
+  margin-right: 0px;
+}
+
 
 .popup-radio-text::before {
   content: "";
@@ -257,6 +265,7 @@ h2.popup-title {
   height: 17px;
   display: inline-block;
   background: url("../svg/form-empty-circle.svg") no-repeat left bottom / 17px;
+  padding-right: 5px;
 }
 
 .popup-radio-opt:checked + .popup-radio-text::before {
@@ -264,6 +273,7 @@ h2.popup-title {
 }
 
 .pop-submit-button {
+
   border: none;
   padding: 15px;
   width: 100%;
@@ -371,7 +381,6 @@ h2.popup-title {
   z-index: 1;
   align-items: end;
   justify-content: center;
-
 }
 
 .trends-card::before {
@@ -418,8 +427,6 @@ h2.popup-title {
 .trend-4 {
   background-image: url("../img/trend4.jpg");
 }
-
-
 
 .card {
   display: flex;
@@ -511,7 +518,6 @@ h2.popup-title {
 
 /*   ASIDE    */
 
-
 .aside-img {
   height: 70px;
 }
@@ -528,8 +534,6 @@ h2.popup-title {
 .aside-card-desc {
   margin-left: 20px;
 }
-
-
 
 .new-post-title {
   text-decoration: none;
@@ -678,7 +682,7 @@ h2.popup-title {
 /*   SHOP   */
 
 .shop {
-  display: block; 
+  display: block;
   padding: 0 15px 0 15px;
   max-width: 1170px;
   margin: auto auto;
@@ -763,30 +767,32 @@ h2.popup-title {
   background-color: #323232;
 }
 
-
-
 /*  FOOTER    */
 .footer {
-  width: 100%;
   max-width: 1170px;
-  padding: 30px 0 30px 0;
-  /* padding: 30px; */
-  background-color: #f4f7f6;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0 15px;
   margin-bottom: 72px;
 }
 
-.footer-list {
+.social-media {
+  
+  padding: 30px 0 30px 0;
+  background-color: #f4f7f6;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-list {
   list-style: none;
   display: flex;
   gap: 30px;
 }
 
-.footer-item {
+.media-item {
   display: block;
   width: 20px;
   height: 20px;
@@ -875,11 +881,11 @@ h2.popup-title {
     padding: 0 35px 0 35px;
     margin-bottom: 50px;
   }
-  
+
   .main {
     width: calc(100% - 305px);
   }
-  
+
   .aside {
     width: 270px;
     box-sizing: border-box;
@@ -887,7 +893,6 @@ h2.popup-title {
 
   .main-title {
     font-size: 18px;
-    
   }
 
   .card-title {
@@ -903,7 +908,6 @@ h2.popup-title {
     flex-direction: row;
   }
 
-
   .trends-card {
     width: calc(50% - 4px);
     min-height: 247px;
@@ -918,7 +922,6 @@ h2.popup-title {
 
   .trends-caption {
     font-size: 17px;
-
   }
 
   .card {
@@ -949,9 +952,8 @@ h2.popup-title {
 
   /*    SHOP    */
   .shop {
-    padding: 0 35px 0 35px; 
+    padding: 0 35px 0 35px;
     margin-bottom: 50px;
-    
   }
 
   .shop-card-list {
@@ -1052,7 +1054,7 @@ h2.popup-title {
     width: 330px;
     display: flex;
     justify-content: end;
-}
+  }
 
   .popup-close {
     width: 27px;
@@ -1185,7 +1187,7 @@ h2.popup-title {
   }
 
   .shop-pic {
-    display: block; 
+    display: block;
     width: 100%;
   }
 
@@ -1209,7 +1211,7 @@ h2.popup-title {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .trends-card {
     width: calc(50% - 4px);
   }
